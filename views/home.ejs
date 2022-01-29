@@ -1,0 +1,12 @@
+<%- include("header"); -%>
+
+
+
+<%   post1.forEach(function(p) { %>
+
+<h1><%=  p.title  %>  </h1>   <h6> <%=  date1  %></h6>
+<p><%=  p.post.substring(0,10)+"..."  %><a href="/posts/<%=  p.title  %> ">Read more</a></p>
+<% }) %>
+
+
+<%- include("footer"); -%>
